@@ -1,14 +1,17 @@
 :root {
     /* bg colors */
-    --background: #2C5364 ;
+    --background: #FFF2CC ;
     --primary: rgb(14, 2, 2) ;
-    --secondary: rgb(234, 219, 106) ;
+    --secondary: #FED049 ;
+    --tertiary: #F4B183;
+    --quaternary:#DFA67B;
+    --fifth: #FF6969;
     --nav-bg: pink   ;
 
 
     /* text colors */
-    --text-black: rgba(20, 3, 3, 0.819) ;
-    --text-white: rgb(121, 121, 174);
+    --text-black: rgba(7, 0, 0, 0.819) ;
+    --text-white: #F4B183;
 }
 
 * {
@@ -24,9 +27,9 @@ header {
     background: var(--secondary);
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items:center ;
-    height: 80px;
+    height: 90px;
     padding: 0 70px;
     position: fixed;
     top: 0;
@@ -37,28 +40,28 @@ header {
 
 .logo {
     height: 70%;
-   
-   
 }
 
 
-.navbar-list,
+/* .navbar-list, */
 .navbar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content:center;
     align-items: center;
+    gap: 32px
 }
 
-.navbar {
-    gap: 100px;
-}
 
 .navbar-list {
     gap: 32px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
 .navbar-list a {
     font-size: 16px;
+    font-weight: 600;
     color: var(--text-black);
 }
 
@@ -75,6 +78,207 @@ header {
     border: solid 2px black;
     border-radius: 25%;     
 }
+
+main {
+background: var(--background) ;
+color: black;   
+display: flex;
+justify-content: left;
+align-items: center;
+flex-direction: column;
+width: 100%;
+margin-top: 100px;
+}
+
+/* SECTION HERO */
+
+#hero {
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.hero-info { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 40px;
+    width: 50%;
+
+
+}
+
+.hero-info h1 {
+    font-size: 40px;
+    width: 80%;
+    min-width: 500px;
+    font-weight: 800;
+    color: var(--text-black);
+}
+
+.hero-info p {
+    font-size: 14px;
+    font-weight: 500;
+    width: 80%;
+    color: var(--text-black);
+}
+
+.hero-info a {
+    color: var(--text-black);
+    background-color: var(--secondary);
+    width: 120px;
+    padding: 8px 0;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    border: solid;
+    border-radius: 15px;
+}
+
+.hero-card {
+    width: 300px;
+    background: var(--secondary);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.hero-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+}
+
+/* .hero-card-top {
+    display: flex;
+    align-items:center ;
+    justify-content:right;
+    gap: 20px;
+    display: ;
+} */
+
+/* .hero-card-top span {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+
+} */
+
+.hero-card-top h3 {
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    /* text-overflow:ellipsis; */
+}
+
+.hero-card-bottom {
+
+    background: var(--secondary);
+    
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px; 
+}
+
+.hero-card-creator img {
+    width: 80px;
+    height: 70px;
+}
+
+.hero-card-price {
+    font-weight: 600 ;
+}
+
+.hero-card-price p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SECTION INFO  */
+
+#info {
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#info h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.img-info-cards {
+    width: 60px;
+    height: 60px;
+}
+.info-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-card {
+    background-color: var(--secondary);
+    width: 300px;
+    height: 290px;
+    border-radius: 15px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.info-card h3 {
+    font-size: 20px;
+    font-weight: 18px;
+}
+
+.info-card p {
+      font-size: 15px;
+      font-weight: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
