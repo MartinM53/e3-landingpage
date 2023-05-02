@@ -126,10 +126,10 @@ margin-top: 100px;
     color: var(--text-black);
 }
 
-.hero-info a {
+.hero-a1 {
     color: var(--text-black);
     background-color: var(--secondary);
-    width: 120px;
+    width: 100px;
     padding: 8px 0;
     border-radius: 10px;
     text-align: center;
@@ -137,6 +137,38 @@ margin-top: 100px;
     font-weight: 700;
     border: solid;
     border-radius: 15px;
+}
+
+.hero-a2 {
+    color: var(--text-black);
+    background-color: var(--tertiary);
+    width: 100px;
+    padding: 8px 0;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    border: solid;
+    border-radius: 15px;
+}
+/* .hero-info a {
+    color: var(--text-black);
+    background-color: var(--secondary);
+    width: 100px;
+    padding: 8px 0;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    border: solid;
+    border-radius: 15px;
+} */
+
+.botones {
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    width: 70%;
 }
 
 .hero-card {
@@ -210,6 +242,22 @@ margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* SECTION DESCRIPTION */
+
+#description {
+    padding: 10px 0;
+    max-width: 1200px;
+
+}
+
+#description p {
+    width: 100%;
+    text-align: center;
+    padding: 10px 110px;
+
+    
 }
 
 /* SECTION INFO  */
