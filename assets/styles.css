@@ -394,6 +394,10 @@ p {
   width: 20px;
 }
 
+.logo-redes a:hover {
+  transform: scale(1.5);
+}
+
 .logo-redes {
   display: flex;
   justify-content: left;
