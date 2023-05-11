@@ -18,10 +18,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> -->
   </head>
   <body>
     <header>
@@ -38,12 +34,103 @@
           <li><a href="#">Youtube</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
-        <div class="carritodiv">
+
+        <!-- CART LABEL AND INPUT  -->
+        <label for="cart-toggle" class="cart-label">
           <img
             src="./assets/img/pngwing.com.png"
             alt="carrito compras"
             class="carrito"
           />
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+
+        <!-- CART -->
+        <div class="cart">
+          <h2>Tu libros</h2>
+          <!-- Cada item del carrito -->
+          <div class="cart-item">
+            <img
+              src="./assets/img/hp1.png"
+              alt="Cursed Child"
+              class="img-item-carrito"
+            />
+
+            <div class="item-info">
+              <h3 class="item-title">Harry Potter</h3>
+              <p class="item-bid">Cursed child</p>
+              <span class="item-price">$ 2250</span>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="quantity-item">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./assets/img/hp(2).png"
+              alt="Cursed Child"
+              class="img-item-carrito"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Harry Potter</h3>
+              <p class="item-bid">Chamber of Secrets</p>
+              <span class="item-price">$ 2250</span>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="quantity-item">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <img
+              src="./assets/img/hp2 (4).png"
+              alt="Cursed Child"
+              class="img-item-carrito"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Collins</h3>
+              <p class="item-bid">English dictionary</p>
+              <span class="item-price">$ 4599</span>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="quantity-item">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img
+              src="./assets/img/hp saga.png"
+              alt="Cursed Child"
+              class="img-item-carrito"
+            />
+            <div class="item-info">
+              <h3 class="item-title">Harry Potter</h3>
+              <p class="item-bid">Saga completa</p>
+              <span class="item-price">$ 16750</span>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="quantity-item">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <!-- Lo de abajo de los items del carrito -->
+
+          <span class="divider"></span>
+          <div class="card-total">
+            <p>Total:</p>
+            <span>$ 2250</span>
+          </div>
+          <button class="btn-add">Comprar</button>
         </div>
       </nav>
     </header>
@@ -65,7 +152,7 @@
 
         <div class="hero-card">
           <img
-            src="./assets/img/lechuza reading.png"
+            src="./assets/img/hp saga.png"
             alt="imagen hero-card"
             class="img-herocard"
           />
