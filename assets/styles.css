@@ -41,6 +41,8 @@ header {
 
 .navbar-list :hover {
   transform: scale(1.2);
+  color: whitesmoke;
+  transition: 0.3s;
 }
 
 .logo {
@@ -236,7 +238,7 @@ main {
 
 #hero {
   padding: 120px 50px 50px 50px;
-  max-width: 1200px;
+  max-width: 1600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,13 +251,13 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  gap: 40px;
+  gap: 20px;
   width: 50%;
 }
 
 .hero-info h1 {
   font-size: 40px;
-  width: 80%;
+  width: 90%;
   min-width: 500px;
   font-weight: 800;
 
@@ -284,14 +286,16 @@ main {
   text-align: center;
   font-size: 14px;
   font-weight: 700;
-  border: solid;
-  border-color: var(--fifth);
+  border: solid 2px;
+  border-color: var(--text-black);
   border-radius: 15px;
 }
 
 .hero-a1:hover {
   background-color: #ff6969;
   transform: scale(1.05);
+  transition: 0.3s;
+  color: whitesmoke;
 }
 
 .hero-a2 {
@@ -303,14 +307,16 @@ main {
   text-align: center;
   font-size: 14px;
   font-weight: 700;
-  border: solid;
-  border-color: var(--fifth);
+  border: solid 2px;
+  border-color: var(--text-black);
   border-radius: 15px;
 }
 
 .hero-a2:hover {
   background-color: #ff6969;
   transform: scale(1.05);
+  transition: 0.3s;
+  color: whitesmoke;
 }
 
 /* .hero-info a {
@@ -328,9 +334,11 @@ main {
 
 .botones {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  width: 70%;
+  /* width: 50%; */
+  gap: 100px;
+  padding: 0 30px;
 }
 
 .hero-card {
@@ -560,11 +568,14 @@ p {
 }
 
 .logo-redes img {
-  width: 20px;
+  width: 30px;
 }
 
 .logo-redes a:hover {
   transform: scale(1.5);
+
+  border-radius: 15px;
+  transition: 0.5s;
 }
 
 .logo-redes {
@@ -572,7 +583,7 @@ p {
   justify-content: left;
   align-items: center;
   gap: 30px;
-  padding: 2px 0 10px 0;
+  padding: 20px 0 0 0;
 }
 
 .div-logo {
@@ -642,6 +653,12 @@ p {
   #description p {
     padding: 0 25px;
   }
+
+  .logo-redes {
+    display: flex;
+    justify-content: left;
+    padding: 12px 0;
+  }
 }
 
 /* MEDIAQUERIES MOBILE  MOBILE                        MOBILE                              MOBILE*/
@@ -652,7 +669,7 @@ p {
     align-items: flex-start;
     justify-content: center;
     width: 70%;
-    height: calc(60vh - 90px);
+    height: calc(30vh - 30px);
     position: absolute;
     top: 90px;
     left: 50%;
@@ -699,6 +716,7 @@ p {
   .logo-redes {
     display: flex;
     justify-content: center;
+    padding: 10px 0;
   }
   iframe {
     display: flex;
@@ -709,7 +727,7 @@ p {
     width: 100%;
   }
   .hero-info h1 {
-    min-width: 200px;
+    min-width: 300px;
   }
 
   .botones {
@@ -718,5 +736,16 @@ p {
 
   .footer-1 h2 {
     padding: 0 30px;
+  }
+
+  iframe {
+    max-width: 250px;
+  }
+  .info-cards-container {
+    gap: 30px 0;
+  }
+
+  #info {
+    gap: 30px 0;
   }
 }
